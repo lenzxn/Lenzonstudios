@@ -1,0 +1,82 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.management-container{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.management-row{
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    @include mixgrad;
+}
+
+.management{
+    border-radius: 15px;
+    @include mixgrad;
+    width: 100%;
+
+    &__card{
+        background-color: rgba($white, 0.8);
+        padding: 2rem 1.25rem;
+        border-radius: 0.625rem;
+        height: auto;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+    &__pic{
+        width: 7rem;
+        height: 7rem;
+        position: absolute;
+        left: 50%;
+        bottom: 39%;
+        transform: translateX(-50%);
+    }
+
+    &__role{
+        padding-top: 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        font-weight: 500;
+
+    }
+}
+
+//Media Query for Medium Screens */
+@media (max-width: 768px) {
+    .management {
+        &__pic {
+            width: 5rem; /* Adjust size for smaller screens */
+            height: 5rem;
+        }
+        
+        &__role {
+            padding-top: 1rem; /* Reduce padding */
+            margin-bottom: 3rem; /* Reduce margin */
+        }
+    }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 576px) {
+    .management {
+        &__card {
+            padding: 1rem; /* Reduce padding for smaller screens */
+            margin-bottom: 3rem; /* Reduce margin between cards */
+        }
+
+        &__pic {
+            bottom: 25%;
+            width: 4rem; /* Further adjust size */
+            height: 4rem;
+        }
+        
+        &__role {
+            font-weight: 400; /* Adjust font weight if needed */
+            padding-top: 0.5rem; /* Further reduce padding */
+            margin-bottom: 2rem; /* Further reduce margin */
+        }
+    }
+}

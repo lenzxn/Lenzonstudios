@@ -1,0 +1,46 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+
+.accordion-item{
+    @include mixgrad;
+    border-radius:8px;
+}
+.accordion-button{
+    @include mixgrad;
+    border-radius:8px;    
+}
+
+
+.accordion-full {
+    width: 1000px; /* Adjust as needed */
+    margin-top: 2rem;
+    border-radius:8px;  
+}
+.accordion-collapse {
+    margin: 1rem;
+    border-radius:8px;  
+    
+    
+    
+}
+.accordion-header {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-radius:8px;  
+}
+
+@media (max-width: 768px) { /* For medium screens and down */
+    .accordion-full {
+        width: 100%; /* Full width */
+        margin: 1rem; /* No margins */
+    }
+
+    .accordion-collapse {
+        margin: 0; /* No margins for collapse content */
+    }
+
+    .accordion-header {
+        margin: 0; /* No margins for headers */
+    }
+}

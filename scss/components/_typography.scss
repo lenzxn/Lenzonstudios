@@ -1,0 +1,74 @@
+@use'../custom' as *;
+
+.display-2 {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-transform: capitalize;
+
+
+    &--intro{
+        margin-bottom: 2rem;
+        display: inline-block;
+        font-weight: 700;
+        color: $white;
+        font-family: "Orbitron", sans-serif;
+        
+        @include media-breakpoint-down(md) {
+            margin: auto;
+        }
+
+    }
+
+    &--introtxt{
+        font-family: "Chakra Petch", sans-serif;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+        display: block;
+        color: $white;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.5rem;
+            display: inline-block;
+            
+        }
+    }
+}
+
+.display-3{
+    font-family: "Orbitron", sans-serif;
+    margin-top: 7rem;
+    margin-bottom: 0;
+}
+.display-3-dark{
+    font-family: "Orbitron", sans-serif;
+    margin-top: 7rem;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+    color: $black;
+}
+
+.display-4{
+    font-family: "Orbitron", sans-serif;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    color: $white;
+}
+
+.brodtextlight{
+    font-family: "Chakra Petch", sans-serif;
+    color: $white
+}
+
+.brodtext{
+    font-family: "Chakra Petch", sans-serif;
+}
+.brodtext-2{
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 1.2rem;
+}
+
+.emphasise{
+    font-family: "Orbitron", sans-serif;
+}

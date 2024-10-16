@@ -1,0 +1,44 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.contact-container{
+    @include mixgrad;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.submit-button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+
+    &:hover{
+        @include mixlight;
+    }
+    
+   
+}
+
+.footer-bottom{
+    @include mixgrad;
+}
+
+.back-to-top {
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    
+    &:hover{
+        @include mixlight;
+    }
+
+  }
+  

@@ -1,0 +1,46 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.nav-item{
+    border: 1 $white;
+}
+  
+
+.menu {
+    @include mixgrad;
+    li{
+        padding:0 1rem;
+        a{
+            color: $white;
+            border-radius: 10px;
+            font-family: "Orbitron", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+                        
+            &:hover {
+                @include mixlight;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) { 
+    .menu-togg{
+        margin-right: 1rem;
+    }
+}
+
+.menu1 {
+    @include mixlight;
+}
+
+.logo1{
+ max-width: 10rem;
+ max-height: 10rem;
+}
+
+
+
+

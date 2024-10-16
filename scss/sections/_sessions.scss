@@ -1,0 +1,22 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.sessions_content{
+    background-color:$white;
+}
+
+.sessions-placeholder{
+    background-color: $white;
+    margin-bottom: 3rem;
+}
+
+.sessions{
+    @include mixgrad;  
+    padding: 0;
+    margin: 0;  
+}
+
+.sessions-row{
+    padding: 1rem;
+}
+

@@ -1,0 +1,40 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+//Sass Nestning begränsar stilarna till enbart ''parent'' elementet och förhindrar stilkonflikter
+.btn-round{
+    position: relative;
+    margin-left: 0.8rem;
+    width: 2.4rem;     // Same width as the span element
+    height: 2.4rem;    // Same height as the span element
+    padding: 0;        // Remove padding to fit the span exactly
+    border-radius: 50%; // Make the button circular
+    border: 0.1rem solid rgba($white, 0.6);
+    background-color: $white;
+
+    span{
+        position: absolute;
+        background-color: $primary;
+        width: 2.2rem;
+        height: 2.2rem;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+
+        i{
+            color: $white;
+            font-size: 1.3rem;
+            line-height: 2.2rem;
+
+        }
+        
+        &:hover {
+            @include mixlight;
+        }
+    }
+    
+    &:hover {
+       border-color: $yellow;
+       background-color: $yellow;
+    }
+        
+}

@@ -1,0 +1,114 @@
+@use'../custom' as *;
+@use'../components/mixins' as*;
+
+.carousell {
+    height: 700px; 
+    @include mixgrad;
+}
+
+.carousell-inner {
+    margin-top: 5rem;
+    height: 100%; /* Ensure inner carousel takes full height */
+}
+
+.carousell-item {
+    height: 100%; /* Ensure each item takes full height */
+    overflow: hidden; /* Hide overflowing content */
+    
+    h3{
+        text-shadow: 2px 2px 5px rgba(0, 0, 0,1); 
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 4rem;
+    }
+    h4{
+        text-shadow: 2px 2px 5px rgba(0, 0, 0,1); 
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+    }
+    p{
+        text-shadow: 2px 2px 5px rgba(0, 0, 0,1); 
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 800;
+        font-style: normal; 
+        font-size: 1.8rem;
+        opacity: 0.8;
+    }
+}
+
+.carousell-item img {
+    height: 100%; /* Make the image fill the height */
+    width: 100%; /* Make the image fill the width */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    opacity: 0.75;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #carouselmax{
+        height: 500px; /* Height for smaller screens */
+    }
+
+    .carousel-caption {
+        h3 {
+            font-size: 2rem; 
+        }
+        h4 {
+            font-size: 1.2rem; 
+        }
+
+        p {
+            font-size: 0.8rem; 
+        }
+    }
+}
+
+
+.intro-section{
+    @include mixgrad;
+    padding: 3rem 2rem 2rem 2rem;
+    width: 100%;
+}
+
+
+.intros {
+    .video-box {
+        position: relative;
+
+        a {
+            
+            span {
+                i {
+                    font-size: 6rem;
+                    color: azure;
+                }
+            }
+        }
+    }
+}
+
+.border-animation {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.2rem;
+    width: 6.5rem;
+    height: 5rem;
+    border: 0.55rem solid white; /* Changed from $white to plain white for CSS */
+    border-radius: 25%; /* Adjusted to give a more subtle rounded corner like the YouTube logo */
+    background-color: transparent; /* Ensure there's no fill color */
+    animation: pulse-border 1s linear infinite;
+}
+
+b.order-animation-border1{
+    animation: 1s;
+}
+
+.border-animation-border2{
+    animation-delay: 1.2s;
+}
+

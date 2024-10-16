@@ -1,0 +1,19 @@
+{
+  "name": "finale",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+  "compile:sass": "sass --watch scss:assets/css"
+  },
+  "keywords": [],
+  "author": "\"Lenzon\"",
+  "license": "ISC",
+  "description": "Bootstrap",
+  "devDependencies": {
+    "sass": "^1.79.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "bootstrap": "^5.3.3"
+  }
+}

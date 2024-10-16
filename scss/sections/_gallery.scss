@@ -1,0 +1,45 @@
+@use '../custom' as *;
+@use'../components/mixins' as*;
+
+/* Custom Grid for the container */
+.gallery-container {
+  @include mixgrad;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+  gap: 10px; /* Space between boxes */
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Square boxes */
+.gallery-box {
+  background-color: lightblue;
+  position: relative; /* Position for absolute child */
+  overflow: hidden; /* Ensure overflow is hidden */
+  border-radius: 10px; /* Border radius for the box */
+  padding-top: 100%; 
+}
+
+.gallery-box img {
+  position: absolute; /* Position absolute to fill the box */
+  width: 100%; /* Make the image take full width */
+  height: 100%; /* Make the image take full height */
+  object-fit: cover; /* Cover the box while maintaining aspect ratio */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  border-radius: 10px; /* Same border radius as the box */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) { /* Small screens */
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+  }
+}
+
+@media (max-width: 576px) { /* Extra small screens */
+  .gallery-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 boxes per row */
+  }
+}

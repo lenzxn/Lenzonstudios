@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LZ MUSIC</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/LENZON.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    
+  </head>
+<body>
+
+       <div class="home" id="home"></div>
+
+       <!--NAV BAR MENU-->
+        <nav class="menuuu  menu navbar navbar-expand-lg navbar-dark bg-light shadow fixed-top">
+        <!--!ändrar container, justify content!-->
+        <div class="container">
+              <a class="navbar-brand" href="finale.html">
+                <img class="logo1" src="./assets/images/ENZON.png" alt="brand-logo">
+              </a>
+              <button class="menu-togg togg navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="finale.html">Home</a>
+                  </li>
+                  <li  class="nav-item">
+                    <a class="nav-link" href="#faq">Who Are We?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a  class="nav-link" href="#sessions">Sessions</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#creativeteam">Creative Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#mgmtm">Management</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact-form">Contact</a>
+                  </li>
+                </ul>
+                <a href="https://www.instagram.com/lenzxn" target="_blank">
+                  <button type="button" class="rounded-pill btn-round">
+                  <span>
+                    <i class="fa-brands fa-instagram"></i>
+                   </span>  
+                </button>
+                </a>
+                <a href="https://www.facebook.com/people/Lenzon/100075924918062/?sk=about" target="_blank">
+                  <button type="button" class="rounded-pill btn-round">
+                  <span> 
+                    <i class="fa-brands fa-facebook"></i>
+                  </span>  
+                </button>
+                 </a>
+                 <a href="https://www.youtube.com/" target="_blank">
+                  <button type="button" class="rounded-pill btn-round">
+                  <span> 
+                    <i class="fa-brands fa-youtube"></i>
+                  </span>  
+                </button>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <!--HOME SEKTION MED ''CAROUSEL'''-->
+        <div id="carouselmax" class="carousell carousel slide carousel-fade" data-bs-ride="carousel" >
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselmax" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselmax" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselmax" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <!--data-bs-target för att determine hur många millisekunder-->
+          <div class="carousell-inner  carousel-inner" data-bs-interval= "3000">
+              <!-- Första slide med 1 bild -->
+              <div class="carousell-item carousel-item active">
+                  <img src="./assets/images/carousel1.jpg" class="d-block w-100" alt="First Image">
+                  <div class="carousell-caption carousel-caption d-block">
+                      <h3 style="color:rgb(26, 228, 246);" >Visual Art</h5>
+                        <h4>Creative Process & Direction</h4>
+                        <p style="color:rgb(26, 246, 246);" >A team focused on enhancing visuality and experience through innovative art direction and collaboration.
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <!-- Andra slide med 1 bild -->
+                    <div class="carousell-item carousel-item" data-bs-interval="2000">
+                      <img src="./assets/images/carousel1.jpeg" class="d-block w-100" alt="Second Image" class="adjust-image">
+                      <div class="carousell-caption carousel-caption d-block">
+                        <h3 style="color: rgb(148, 159, 247);" >Studio Experience</h3>
+                          <h4>Premium Recordings</h4>
+                          <p style="color: rgb(177, 183, 234);" >Experience top-of-the-line equipment and expert engineers dedicated to capturing your unique sound.
+                          </p>
+                        </div>
+              </div>
+      
+              <!-- Tredje slide med 1 bild -->
+              <div class="carousell-item  carousel-item" data-bs-interval="2000">
+                  <img src="./assets/images/carousel3.jpg" class="d-block w-100" alt="Third Image">
+                  <div class="carousell-caption carousel-caption d-block">
+                      <h3 style="color: rgb(183, 121, 76);" >MGMT</h5>
+                        <h4>Expert Management</h4>
+                      <p style="color: rgb(211, 170, 141);" >Led by industry pros, our management team offers tailored guidance, legal advice, and a broad network to elevate your career.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselmax" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselmax" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+        
+        <!--Home-sektion-->
+        <section id="intro" class="intro-section">
+          <div class="container intro-container">
+            <div class="row align-items-center justify-content-center text-white">
+              <div class="col-md-6 intros">
+                <h1 class="display-2">
+                  <span class="display-2--intro lh-base">
+                    Lenzon-Studios 
+                  </span>
+                </h1> 
+                <h2 class="display-2">
+                  <span class="display-2--introtxt lh-base">
+                    At lenzon-Studios, we bring sound, vision, 
+                    and creativity to life. Check out our work, from recording 
+                    your next hit to shaping your visual identity. Together, 
+                    let's create something extraordinary!
+                  </span>
+                </h2>
+                <!--HOME video-->
+              </div>
+              <div class="col-md-6 intros text-end">
+              <div class="video-box">
+                <img src="./assets/images/intro.png"  alt="intro video"  class="img-fluid">
+                <a href="https://www.youtube.com/watch?v=kJ68H3E_sZY" target="_blank" class="position-absolute top-50 start-50 translate-middle" >
+                  <span>
+                    <i class="fa-brands fa-youtube" ></i>
+                  </span>
+                  <span class="border-animation border-animation-border1"></span>
+                  <span class="border-animation border-animation-border2"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+            </div>
+            </section>  
+            <!--Svg gradient-->    
+            <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1;" />
+                  <stop offset="50%" style="stop-color: rgba(6, 22, 45, 1); stop-opacity: 1;" />
+                  <stop offset="100%" style="stop-color: rgba(56, 27, 104, 1); stop-opacity: 1;" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" d="M0,320L24,288C48,256,96,192,144,154.7C192,117,240,107,288,122.7C336,139,384,181,432,181.3C480,181,528,139,576,133.3C624,128,672,160,720,197.3C768,235,816,277,864,261.3C912,245,960,171,1008,144C1056,117,1104,139,1152,160C1200,181,1248,203,1296,186.7C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+            </svg>
+
+
+            <!--Who are we sektion-->
+            <section id="faq" class="who-are-we">
+              <div class="container">
+                <div class="row text-center">
+                  <h2 class="display-3 fw bold"> WHO ARE WE?</h2>
+                  <div class="heading-line mb-2" ></div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="row pt-2 pb-2 mt-5 mb-3">
+                  <div class="col-md-6">
+                  <div class="bg-white p-3">
+                    <h2 class="fw-bold  text-center lh-base emphasise">
+                      Xplore Our Sound <br>
+
+                      Step into Lenzon Studios and immerse yourself in a 
+                      world where sound, vision, and creativity comes alive. <br> 
+                      Our team is ready to bring your ideas to life.
+                    </h2>
+                  </div>
+                 </div>
+                  <div class="col-md-6"> 
+                    <div class="bg-white p-4 text-star">
+                      <p class="fw-ligt lh-lg brodtext">
+                        Founded in 2015 by music producer Ethan Wells and creative 
+                        director Maya Hartman, our company—EchoPoint Studios—was 
+                        born in the heart of Los Angeles, CA. What began as a small 
+                        recording studio has grown into a full-service creative hub 
+                        for artists. Our mission is simple: to empower creators with 
+                        cutting-edge recording facilities, expert management, and 
+                        bold visual direction. With a team of top-tier engineers, 
+                        legal advisors, and artistic visionaries, we offer a seamless 
+                        experience that nurtures creativity from the studio to the 
+                        stage, helping artists bring their vision to life.</p>
+                    </div>
+                  </div>
+                    </div>
+                  </div>
+            </section>
+
+            <div class="d-flex justify-content-center accordbody">
+              <div class="accordion accordion-full" id="accordionFlushExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class="accordion-button collapsed lh-base brodtextlight" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="width: 100%;">
+                              How can Lenzon Studios help you realize your creative vision in management?
+                          </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="d-flex justify-content-between align-items-start">
+                              <div class="flex-grow-1 brodtextlight">
+                                  At Creative Harmony Productions, we provide tailored management solutions designed to support artists and creative talents. Our dedicated team offers strategic guidance and marketing support to help you reach your full potential. With customized business plans, we navigate the complexities of the music and entertainment industry together, allowing you to focus on what you love most: creating.
+                              </div>
+                              <div>
+                                  <img src="./assets/images/intro.png" alt="Management Visual" style="width: 100px; height: auto; margin-bottom: 10px;">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                      <h2 class="accordion-header">
+                          <button class=" brodtextlight accordion-button collapsed lh-base" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="width: 100%;">
+                              What makes our recording services the perfect choice for your next project?
+                          </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body brodtextlight">
+                              Studio Recording <br>
+                              In our state-of-the-art recording studio, equipped with the latest technology, we provide an inspiring and creative environment for musicians and producers. Our experienced sound engineers are passionate about sound quality and work collaboratively with you to capture your music in the best possible way. Whether you're a solo artist or a band, we ensure that your sound is perfected, making your project a true masterpiece.
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="accordion-item">
+                      <h2 class="accordion-header brodtextlight">
+                          <button class="brodtextlight accordion-button collapsed lh-base" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="width: 100%;">
+                              How can our visual creativity elevate your brand or project?
+                          </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body brodtextlight">
+                              Visual Creativity <br>
+                              Our visual creativity department serves as a platform for design, animation, and film production. We specialize in creating unique and memorable visual experiences that effectively capture and communicate your message. From graphic design and brand identity to film and animation, we work with you to bring your vision to life and create a strong visual presence that resonates with your audience.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          
+          <section id="sessions" >
+            <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1;" />
+                  <stop offset="50%" style="stop-color: rgba(6, 22, 45, 1); stop-opacity: 1;" />
+                  <stop offset="100%" style="stop-color: rgba(56, 27, 104, 1); stop-opacity: 1;" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" fill-opacity="1" d="M0,288L14.1,245.3C28.2,203,56,117,85,112C112.9,107,141,181,169,224C197.6,267,226,277,254,266.7C282.4,256,311,224,339,202.7C367.1,181,395,171,424,160C451.8,149,480,139,508,165.3C536.5,192,565,256,593,234.7C621.2,213,649,107,678,85.3C705.9,64,734,128,762,144C790.6,160,819,128,847,122.7C875.3,117,904,139,932,165.3C960,192,988,224,1016,202.7C1044.7,181,1073,107,1101,101.3C1129.4,96,1158,160,1186,208C1214.1,256,1242,288,1271,288C1298.8,288,1327,256,1355,202.7C1383.5,149,1412,75,1426,37.3L1440,0L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path>
+            </svg>        
+            <div class="sessions">
+                <div class="container">
+                  <div class="row text-center">
+                  <h1 class="display-4 fw-bold"> SESSIONS </h1>
+                  <hr style="width: 150px; height: 4px; color:antiquewhite" class="mx-auto">
+                  <p class=" brodtextlight lead pt1">
+                    Explore our sessions...
+                  </p>
+                </div>
+                </div>
+            </div>
+            <!--Svg gradient-->    
+            <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+              <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1;" />
+                  <stop offset="50%" style="stop-color: rgba(6, 22, 45, 1); stop-opacity: 1;" />
+                  <stop offset="100%" style="stop-color: rgba(56, 27, 104, 1); stop-opacity: 1;" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" d="M0,320L24,288C48,256,96,192,144,154.7C192,117,240,107,288,122.7C336,139,384,181,432,181.3C480,181,528,139,576,133.3C624,128,672,160,720,197.3C768,235,816,277,864,261.3C912,245,960,171,1008,144C1056,117,1104,139,1152,160C1200,181,1248,203,1296,186.7C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+            </svg>
+          </section> 
+
+          <div class="sessions-container container">
+            <!-- Session 1: Text first, Image second -->
+            <div class="sessions-row row align-items-center">
+              <div class="col-lg-6 col-md-6 order-md-1 order-1 col-sm-12 sessions-placeholder mt-4">
+                <div class="sessions_content">
+                  <h2 class="display-3-dark mt-1">Top-of-the-Line Equipment</h2>
+                  <p class="brodtext lh-lg">
+                    We pride ourselves on providing top-notch equipment that meets the demands of even the most discerning professionals. From high-end mixing consoles and premium microphones to cutting-edge digital audio workstations, our gear is meticulously maintained and regularly updated to ensure that you have access to the best technology available.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 order-md-2 order-2 col-sm-12 sessions-placeholder mt-4">
+                <div class="sessions_content">
+                  <img src="./assets/images/Mic.svg" alt="micdrop" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          
+            <!-- Session 2: Image first, Text second -->
+            <div class="sessions-row row align-items-center">
+              <div class="col-lg-6 col-md-6 order-md-1 order-2 col-sm-12 sessions-placeholder mt-4">
+                <div class="sessions_content">
+                  <img src="./assets/images/mello.svg" alt="mello" class="img-fluid">
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 order-md-2 order-1 col-sm-12 sessions-placeholder mt-4">
+                <div class="sessions_content">
+                  <h2 class="display-3-dark mt-1">Experienced Producers at Your Service</h2>
+                  <p class="brodtext lh-lg">
+                    Our team of seasoned producers is here to guide you every step of the way. With years of industry experience and a passion for music, they are dedicated to helping you bring your vision to life. Whether you're a seasoned pro or just starting, our producers will work closely with you to achieve the sound you desire.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+
+          <section id="creativeteam" >
+              <svg class="svg-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1;" />
+                  <stop offset="50%" style="stop-color: rgba(6, 22, 45, 1); stop-opacity: 1;" />
+                  <stop offset="100%" style="stop-color: rgba(56, 27, 104, 1); stop-opacity: 1;" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" fill-opacity="1" d="M0,288L14.1,245.3C28.2,203,56,117,85,112C112.9,107,141,181,169,224C197.6,267,226,277,254,266.7C282.4,256,311,224,339,202.7C367.1,181,395,171,424,160C451.8,149,480,139,508,165.3C536.5,192,565,256,593,234.7C621.2,213,649,107,678,85.3C705.9,64,734,128,762,144C790.6,160,819,128,847,122.7C875.3,117,904,139,932,165.3C960,192,988,224,1016,202.7C1044.7,181,1073,107,1101,101.3C1129.4,96,1158,160,1186,208C1214.1,256,1242,288,1271,288C1298.8,288,1327,256,1355,202.7C1383.5,149,1412,75,1426,37.3L1440,0L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path>
+            </svg>         
+          <div class="creativeteam-container">
+            <div class="row text-center">
+              <h1 class="display-4 fw-bold"> CREATIVE TEAM </h1>
+              <hr style="width: 150px; height: 4px; color:antiquewhite" class="mx-auto">
+              <p class=" brodtextlight lead pt1">
+                Highest in industry
+                  </p>
+                </div>
+                </div>
+              </div>
+                <!--Svg gradient-->    
+                <svg class="svg-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                  <defs>
+                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color: rgba(0, 0, 0, 1); stop-opacity: 1;" />
+                  <stop offset="50%" style="stop-color: rgba(6, 22, 45, 1); stop-opacity: 1;" />
+                  <stop offset="100%" style="stop-color: rgba(56, 27, 104, 1); stop-opacity: 1;" />
+                </linearGradient>
+              </defs>
+              <path fill="url(#gradient)" d="M0,320L24,288C48,256,96,192,144,154.7C192,117,240,107,288,122.7C336,139,384,181,432,181.3C480,181,528,139,576,133.3C624,128,672,160,720,197.3C768,235,816,277,864,261.3C912,245,960,171,1008,144C1056,117,1104,139,1152,160C1200,181,1248,203,1296,186.7C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path>
+            </svg>
+        </section> 
+        
+        <div class="container">
+          <!-- Sessions content-->
+          <div class="sessions-row row align-items-center">
+            <div class="col-lg-6 col-md-6 order-md-1 order-1 col-sm-12 col-xs-12 sessions-placeholder mt4">
+              <div class="sessions_content">
+                <h2 class="display-3-dark mt-1">Photography, Styling & Visual Identity</h2>
+                <p class="brodtext lh-lg">
+                  From editorial photoshoots to live performance visuals, 
+                  our team works with top photographers, stylists, 
+                  and makeup artists to create stunning images that 
+                  define your brand. We meticulously plan every 
+                  photoshoot and campaign, ensuring that your 
+                  visuals are cohesive and reflect your music's essence.
+                </p>
+              </div>
+            </div>
+            <div class="order-md-2 order-2 col-lg-6 col-md-6 col-sm-12 col-xs-12 sessions-placeholder mt4">
+              <div class="sessions_content">
+                <img src="./assets/images/Fashion.svg" alt="micdrop" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!--Sessions cintent-->
+          <div class="sessions-row row align-items-center">
+            <div class="order-md-3 order-4 col-lg-6 col-md-6 col-sm-12 col-xs-12 sessions-placeholder mt4">
+              <div class="sessions_content">
+                <img src="./assets/images/Photo-bro.svg" alt="mello" class="img-fluid">
+              </div>
+            </div>
+            <div class="order-md-4 order-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 sessions-placeholder mt4">
+              <div class="sessions_content">
+                <h2 class="display-3-dark mt-1">Tailored Strategies for Every Artist</h2>
+                <p class="brodtext lh-lg">
+                    No two artists are the same, and neither are our 
+                    approaches. We develop tailored creative strategies 
+                    that align with your goals, whether you're building a 
+                    brand from the ground up or refining an established 
+                    image. We focus on amplifying your unique qualities 
+                    while ensuring your visuals are always cutting-edge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="creativeteam-gallery">
+          <div class="container gallery-container">
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery6.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery5.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery4.PNG" alt="" class="img-fluid">
+            </div>
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery3.JPG" alt="" class="img-fluid">
+            </div>
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery2.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="gallery-box"> 
+              <img src="./assets/images/gallery1.PNG" alt="" class="img-fluid">
+            </div>
+          </div>
+
+          <div id="mgmtm"> </div>
+            
+          <section id="Mgmt" class="container management" >     
+                <div class="management container management-container">
+                  <div class="management-row row text-center">
+                  <h1 class="display-4 fw-bold"> MANAGEMENT </h1>
+                  <hr style="width: 150px; height: 4px; color:antiquewhite" class="mx-auto">
+                  <p class=" brodtextlight lead pt1">
+                    World-class network
+                  </p>
+                </div>
+                  <div class="row align-items-center">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <!--Text-card-->
+                          <div class="management__card" >
+                            <p class="lh-lg">
+                              Ethan Cole is the visionary CEO and Founder of 
+                              Lenzon Studios, known for his extensive network 
+                              in the creative industry. With over a decade of 
+                              experience, he has positioned Lenzon Studios as 
+                              a leader in innovative projects, connecting 
+                              artists and business leaders worldwide to 
+                              empower talent and drive creativity.
+                            </p>
+                          </div>
+                          <!--Mgmt pictures-->
+                          <div class="management__pic" >
+                            <img src="./assets/images/fakeper2.jpg" alt="dsFAf"  class="rounded-circle img-fluid">
+
+                          </div>
+                          <!--name adn role-->
+                          <div class="management__role brodtextlight" >
+                            <h3> Ethna Cole </h3>
+                            <p class="lead fw-ligt ">CEO AND FOUNDER</p>
+
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <!--Text-card-->
+                          <div class="management__card" >
+                            <p class="lh-lg brodtext">
+                              Ava Chen is a global Artist Manager with over 15 
+                              years of experience and a vast network in the 
+                              music industry. She has strong relationships with 
+                              major labels and key influencers, ensuring her 
+                              artists thrive while navigating complex contracts 
+                              and building successful careers.
+                            </p>
+
+                          </div>
+                          <!--Mgmt pictures-->
+                          <div class="management__pic" >
+                            <img src="./assets/images/fakeper.jpg" alt="dsFAf"  class="rounded-circle img-fluid">
+
+                          </div>
+                          <!--name adn role-->
+                          <div class="management__role brodtextlight" >
+                            <h3> Ava chen </h3>
+                            <p class="lead fw-ligt "> Artist Manager</p>
+
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <!--Text-card-->
+                          <div class="management__card" >
+                            <p class="lh-lg brodtext">
+                              Leo Ramirez is a renowned Artist Manager with a 
+                              global network and over a decade of experience. 
+                              He excels in elevating emerging talent, securing 
+                              collaborations with major labels, and overseeing 
+                              finance and contract negotiations. His strategic
+                               marketing campaigns and financial acumen ensure 
+                               artists thrive in the competitive music industry.
+                            </p>
+
+                          </div>
+                          <!--Mgmt pictures-->
+                          <div class="management__pic" >
+                            <img src="./assets/images/fakeper3.jpg" alt="dsFAf"  class="rounded-circle img-fluid">
+
+                          </div>
+                          <!--name adn role-->
+                          <div class="management__role brodtextlight" >
+                            <h3> Leo Ramirez </h3>
+                            <p class="lead fw-ligt "> Finance</p>
+
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+          </section> 
+
+          
+          <div class="container mt-5 brodtextlight contact-container" id="contact-form" >
+            <h1 class="contactus">Contact Us!</h1>
+            <form id="contactForm" class="row g-3">
+              <div class="col-md-6">
+                <label for="firstname" class="form-label">First Name:</label>
+                <input type="text" class="form-control" id="firstname" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastname" class="form-label">Last Name:</label>
+                <input type="text" class="form-control" id="lastname" required>
+              </div>
+              <div class="col-md-8">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="col-md-4">
+                <label for="phone" class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" id="phone" required>
+              </div>
+              <div class="col-md-12">
+                <label for="message" class="form-label">Message:</label>
+                <textarea class="form-control" name="Message" id="message" rows="3"></textarea>
+              </div>
+              <div class="col-md-12 d-flex justify-content-center">
+                <button type="submit" class="submit-button btn btn-primary">Submit</button>
+              </div>
+            </form>
+            
+            <!-- Hidden Thank You Message -->
+             <div class="row text-center mt-3 ">
+            <div class="col-md-12" id="thankYouMessage" style="display: none;" >
+              <h3>Thank you! We have received your message.</h3>
+            </div>
+          </div>
+          </div>
+          
+          <footer>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row text-white">
+                  <div class="col-6 d-flex justify-content-start align-items-center footer-bottom__copyright">
+                    © 2024 Lenzon Studios. All Rights Reserved.
+                  </div>
+                  <!-- Back to Top Button -->
+                  <div class="col-6 d-flex justify-content-end align-items-center">
+                    <a href="#top" class="back-to-top btn btn-primary mt-3">Back to Top</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+          
+          <script>
+
+                const menubutton = document.querySelector('.menu-togg');
+                console.log(menubutton)
+
+                menubutton.addEventListener('click',() => {
+                  const meNu = document.querySelector('.menuuu');
+                  meNu.classList.toggle('menu1');
+                });
+          </script>
+         
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent form from refreshing the page
+    
+    const formData = new FormData(this); // Collect the form data
+    
+    // Show the thank-you message right after form submission
+    document.getElementById('thankYouMessage').style.display ='block';
+    
+    // Send form data to the endpoint (replace 'YOUR_ENDPOINT_URL' with the actual endpoint)
+    fetch('YOUR_ENDPOINT_URL', {
+      method: 'POST',
+      body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+//mytheme colors
+$blue:    #06162d;
+$indigo:  #381b68;
+$purple:  #341b64;
+$pink:    #d63384;
+
+$red:     #10458a;
+$orange:  #4306a1;
+$yellow:  #5f3d9e;   
+
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000; 
+
+
+$primary:       $blue;
+$secondary:     $indigo;
+$success:       $purple;
+$info:          $black;
+$warning:       $red;
+$danger:        $orange;
+$light:         $yellow;
+
+// scss-docs-end theme-color-variables
+
+
+
+
+//IMPORT BOOTSTRAP
+@import"../node_modules/bootstrap/scss/bootstrap.scss";

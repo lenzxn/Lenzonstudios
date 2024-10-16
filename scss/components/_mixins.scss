@@ -1,0 +1,12 @@
+@use'../custom' as *;
+
+//Gradient mix
+@mixin mixgrad{
+    background: linear-gradient(to right, rgba($black,1),rgba($primary,1), rgba($secondary,1));
+
+}
+
+@mixin mixlight {
+    background: linear-gradient(to right,rgba($warning, 1),rgba($danger, 1),rgba($light,1));
+}
+

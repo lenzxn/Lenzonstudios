@@ -1,0 +1,18 @@
+@use'custom';
+
+//IMPORTERAR MINA KOMPONENTER
+@use'components/animations';
+@use'components/buttons';
+@use'components/mixins';
+@use'components/typography';
+
+//IMPORTERAR MINA SEKTIONER
+@use'sections/contact';
+@use'sections/creative-team';
+@use'sections/faq';
+@use'sections/footer';
+@use'sections/intro-section';
+@use'sections/management';
+@use'sections/navbar';
+@use'sections/sessions';
+@use'sections/svg';
